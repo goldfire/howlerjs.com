@@ -1,0 +1,3 @@
+[submodule "assets/howler.js"]
+	path = assets/howler.js
+	url = git@github.com:goldfire/howler.js.git

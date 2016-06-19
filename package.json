@@ -1,0 +1,10 @@
+{
+  "name": "howlerjs.com",
+  "description": "Website for howler.js library.",
+  "homepage": "http://howlerjs.com",
+  "author": "James Simpson <james@goldfirestudios.com> (http://goldfirestudios.com)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goldfire/howlerjs.com.git"
+  }
+}

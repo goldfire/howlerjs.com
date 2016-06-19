@@ -1,0 +1,837 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */progress,sub,sup{vertical-align:baseline}button,hr,input{overflow:visible}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  background-color: #fff;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 100%;
+  color: #41392f;
+  position: relative;
+}
+.container {
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: row;
+}
+.heading {
+  width: 100%;
+  height: 40px;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 150px 0 100px 0;
+  text-align: center;
+}
+.wrapper {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Buttons */
+.button {
+  padding: 20px 46px;
+  border-radius: 5px;
+  border: 3px solid #69ba5e;
+  color: #69ba5e;
+  font-size: 1.875em;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: background-color .25s ease-in-out, border .25s ease-in-out, color .25s ease-in-out;
+}
+.full {
+  color: #fff;
+  background-color: #69ba5e;
+}
+.button:hover {
+  color: #fff;
+  background-color: #58a34d;
+  border: 3px solid #58a34d;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 900px;
+  background-color: #eee9db;
+}
+.header .left {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.header .right {
+  width: 44%;
+  height: 100%;
+  align-self: flex-end;
+}
+.logo {
+  background: url(../images/logo.svg) no-repeat;
+  width: 448px;
+  height: 100px;
+  margin-top: 40px;
+}
+.title-container {
+  max-width: 750px;
+}
+.title {
+  font-size: 2.626em;
+  font-weight: bold;
+  color: #635748;
+}
+.subtitle {
+  font-size: 1.75em;
+  font-weight: 100;
+  color: #887a67;
+  width: 90%;
+}
+.header .button {
+  margin-top: 2.25em;
+}
+.docs {
+  margin-left: 15px;
+}
+.social-container {
+  height: 38px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+.social-icon {
+  width: 38px;
+  height: 38px;
+  margin-right: 15px;
+}
+.social-icon:hover {
+  opacity: 1;
+}
+.facebook {
+  background: url(../images/icons/facebook.svg) no-repeat;
+  opacity: 0.8;
+}
+.twitter {
+  background: url(../images/icons/twitter.svg) no-repeat;
+  opacity: 0.8;
+}
+.github-btn {
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.github-btn:hover {
+  opacity: 1;
+}
+.github {
+  background: url(../images/icons/github.svg) no-repeat;
+}
+.stargazers {
+  display: inline-block;
+  font-size: 20px;
+  color: #685a4a;
+  opacity: 0.8;
+}
+.logo-big {
+  background: url(../images/logo-big.svg) no-repeat;
+  height: 124%;
+  width: 1113px;
+  margin-top: -28px;
+}
+
+/* Features */
+.features {
+  width: 100%;
+  min-height: 1165px;
+  margin-bottom: 25px;
+}
+.features .container {
+  flex-direction: column;
+  align-items: center;
+}
+.feature-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.feature-item {
+  width: 28%;
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 5px;
+}
+.feature-item .one {
+  background: url(../images/icons/feature1.svg) no-repeat;
+}
+.feature-item .two {
+  background: url(../images/icons/feature2.svg) no-repeat;
+}
+.feature-item .three {
+  background: url(../images/icons/feature3.svg) no-repeat;
+}
+.feature-item .four {
+  background: url(../images/icons/feature4.svg) no-repeat;
+}
+.feature-item .five {
+  background: url(../images/icons/feature5.svg) no-repeat;
+}
+.feature-item .six {
+  background: url(../images/icons/feature6.svg) no-repeat;
+}
+.feature-item .seven {
+  background: url(../images/icons/feature7.svg) no-repeat;
+}
+.feature-item .eight {
+  background: url(../images/icons/feature8.svg) no-repeat;
+}
+.feature-item .nine {
+  background: url(../images/icons/feature9.svg) no-repeat;
+}
+.feature-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.feature-descr {
+  color: #645e56;
+  font-size: 18px;
+}
+
+/* Demos */
+.demos {
+  width: 100%;
+  background-color: #fbf9f6;
+  padding-bottom: 53px;
+}
+.demos .container {
+  flex-direction: column;
+  align-items: center;
+}
+.demo-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.demo-item {
+  width: 28.15%;
+  margin-bottom: 90px;
+  text-align: center;
+}
+.demo-box {
+  background-size: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+}
+.demo-box:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+.player {
+  background-image: url(../images/demos/player.jpg);
+}
+.radio {
+  background-image: url(../images/demos/radio.jpg);
+}
+.sprite {
+  background-image: url(../images/demos/sprite.jpg);
+}
+.spatial {
+  background-image: url(../images/demos/spatial.jpg);
+}
+.basic {
+  background-image: url(../images/demos/basic.png);
+}
+.code {
+  background-image: url(../images/demos/code.jpg);
+}
+.demo-title {
+  font-size: 30px;
+}
+
+/* Demo Modal */
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.fadein {
+  animation: fadein 0.5s;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.fadeout {
+  animation: fadeout 0.5s;
+}
+@keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+.modal-frame {
+  width: 93%;
+  height: 93%;
+  background-color: #fff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.33);
+  border-radius: 5px;
+  padding: 50px 10px 10px 10px;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+}
+.modal-frame > iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+.modal-info {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.modal-title {
+  color: rgba(65, 57, 47, 1);
+  font-size: 24px;
+  font-weight: bold;
+}
+.modal-close {
+  font-size: 50px;
+  color: rgba(65, 57, 47, 0.5);
+  line-height: 50px;
+  height: 50px;
+}
+.modal-close:hover {
+  color: rgba(65, 57, 47, 1);
+  cursor: pointer;
+}
+
+/* Community */
+.community {
+  width: 100%;
+  min-height: 924px;
+}
+.community .container {
+  flex-direction: column;
+  align-items: center;
+}
+.logo-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 -14px;
+  width: 100%;
+}
+.user-logo {
+  align-self: center;
+  margin: 0 14px 50px 14px;
+}
+.google {
+  background: url(../images/logos/google.svg) no-repeat;
+  /*width: 150px;
+  height: 50px;*/
+  width: 9.375em;
+  height: 3.125em;
+}
+.disney {
+  background: url(../images/logos/disney.svg) no-repeat;
+  /*width: 150px;
+  height: 62px;*/
+  width: 9.375em;
+  height: 3.875em;
+}
+.mozilla {
+  background: url(../images/logos/mozilla.svg) no-repeat;
+  /*width: 150px;
+  height: 39px;*/
+  width: 9.375em;
+  height: 2.4375em;
+}
+.lego {
+  background: url(../images/logos/lego.svg) no-repeat;
+  /*width: 139px;
+  height: 64px;*/
+  width: 8.125em;
+  height: 3.75em;
+}
+.dolby {
+  background: url(../images/logos/dolby.svg) no-repeat;
+  /*width: 150px;
+  height: 28px;*/
+  width: 9.375em;
+  height: 1.75em;
+}
+.dylan {
+  background: url(../images/logos/dylan.svg) no-repeat;
+  /*width: 150px;
+  height: 17px;*/
+  width: 8.9em;
+  height: 1.0em;
+}
+.walmart {
+  background: url(../images/logos/walmart.svg) no-repeat;
+  /*width: 150px;
+  height: 36px;*/
+  width: 9.375em;
+  height: 2.25em;
+}
+.nasa {
+  background: url(../images/logos/nasa.svg) no-repeat;
+  background-size: 100%;
+  /*width: 96px;
+  height: 80px;*/
+  width: 6em;
+  height: 5em;
+}
+.warner {
+  background: url(../images/logos/warner.svg) no-repeat;
+  /*width: 84px;
+  height: 79px;*/
+  width: 5.3em;
+  height: 4.94em;
+}
+.paramount {
+  background: url(../images/logos/paramount.svg) no-repeat;
+  /*width: 98px;
+  height: 89px;*/
+  width: 6.125em;
+  height: 5.5625em;
+}
+.universal {
+  background: url(../images/logos/universal.svg) no-repeat;
+  /*width: 150px;
+  height: 80px;*/
+  width: 9.41em;
+  height: 5em;
+}
+.fox {
+  background: url(../images/logos/fox.svg) no-repeat;
+  /*width: 97px;
+  height: 79px;*/
+  width: 6.0625em;
+  height: 4.9375em;
+}
+.dc {
+  background: url(../images/logos/dc.svg) no-repeat;
+  /*width: 80px;
+  height: 80px;*/
+  width: 5em;
+  height: 5em;
+}
+.ea {
+  background: url(../images/logos/ea.svg) no-repeat;
+  /*width: 80px;
+  height: 80px;*/
+  width: 5em;
+  height: 5em;
+}
+.ubisoft {
+  background: url(../images/logos/ubisoft.svg) no-repeat;
+  /*width: 107px;
+  height: 80px;*/
+  width: 6.75em;
+  height: 5em;
+}
+.dominos {
+  background: url(../images/logos/dominos.svg) no-repeat;
+  /*width: 83px;
+  height: 79px;*/
+  width: 5.0em;
+  height: 4.9em;
+}
+.more-users {
+  margin: 45px 0 150px 0;
+}
+
+/* Footer */
+.waveform {
+  background: url(../images/waveform.svg) repeat-x;
+  width: 100%;
+  height: 197px;
+  margin-top: -197px;
+}
+.footer {
+  width: 100%;
+  height: 260px;
+  background-color: #69ba5e;
+}
+.footer .container {
+  justify-content: space-between;
+  align-items: center;
+}
+.goldfire {
+  margin-bottom: 13px;
+  background: url(../images/logos/goldfire.svg) no-repeat;
+  width: 150px;
+  height: 60px;
+}
+.goldfire:hover {
+  opacity: 0.85;
+}
+.contributors {
+  font-size: 1.5em;
+  font-weight: 100;
+  color: #dcf2d9;
+  text-align: right;
+  line-height: 1.5em;
+  height: 1.5em;
+}
+.contributors a {
+  color: #fff;
+}
+.contributors a:hover {
+  color: #dcf2d9;
+}
+
+/* Showcase Header */
+.header-small {
+  width: 100%;
+  height: 180px;
+  background-color: #eee9db;
+}
+.header-small .container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-small .logo, .header-small .social-container {
+  margin: 0;
+}
+
+/* Showcase Header */
+.showcase-header {
+  width: 100%;
+  padding-bottom: 150px;
+}
+.showcase-header .container {
+  flex-direction: column;
+  justify-content: center;
+}
+.showcase-header .heading {
+  margin-bottom: 20px;
+}
+.description {
+  font-size: 1.375em;
+  color: #645e56;
+  text-align: center;
+}
+.description a {
+  color: #69ba5e;
+}
+.description a:hover {
+  color: #58a34d;
+}
+
+/* Showcase Featured */
+.showcase-featured {
+  width: 100%;
+  padding-bottom: 60px;
+  background-color: #fbf9f6;
+}
+.showcase-featured .container {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0;
+}
+.showcase-featured .demo-list {
+  margin-top: 150px;
+}
+.demo-list a {
+  color: #41392f;
+  text-decoration: none;
+}
+.casinorpg {
+  background-image: url(../images/showcase/casinorpg.jpg);
+}
+.buildchrome {
+  background-image: url(../images/showcase/buildchrome.jpg);
+}
+.madmax {
+  background-image: url(../images/showcase/madmax.jpg);
+}
+.lichness {
+  background-image: url(../images/showcase/lichness.jpg);
+}
+.bobdylan {
+  background-image: url(../images/showcase/bobdylan.jpg);
+}
+.walkingdead {
+  background-image: url(../images/showcase/walkingdead.jpg);
+}
+.dominosdxp {
+  background-image: url(../images/showcase/dominosdxp.jpg);
+}
+.justdance {
+  background-image: url(../images/showcase/justdance.jpg);
+}
+.suicidesquad {
+  background-image: url(../images/showcase/suicidesquad.jpg);
+}
+.cryptogames {
+  background-image: url(../images/showcase/cryptogames.jpg);
+}
+.peanuts {
+  background-image: url(../images/showcase/peanuts.jpg);
+}
+.codemonkey {
+  background-image: url(../images/showcase/codemonkey.jpg);
+}
+.spacecraft {
+  background-image: url(../images/showcase/spacecraft.jpg);
+}
+.legobatman {
+  background-image: url(../images/showcase/legobatman.jpg);
+}
+.dragonage {
+  background-image: url(../images/showcase/dragonage.jpg);
+}
+
+/* Showcase Others */
+.showcasee-others {
+  width: 100%;
+  padding-bottom: 150px;
+  background-color: #fbf9f6;
+}
+.showcase-others .container {
+  flex-direction: column;
+  align-items: center;
+  margin: 150px auto;
+}
+.demo-url {
+  color: #69ba5e;
+  font-size: 18px;
+}
+.demo-list .small {
+  padding: 20px 0;
+}
+.demo-list .small:hover {
+  background-color: #fbf9f6;
+  border-radius: 3px;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1292px) {
+  body {
+    font-size: 85%;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  body {
+    font-size: 76%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    font-size: 70%;
+  }
+  .header .right {
+    width: 0;
+  }
+  .logo-big {
+    display: none;
+  }
+  .header .left {
+    width: 100%;
+    align-items: center;
+  }
+  .title-container {
+    text-align: center;
+    width: 100%;
+  }
+  .subtitle {
+    width: 100%;
+  }
+  .header {
+    height: 100%;
+  }
+  .feature-item {
+    width: 45%;
+  }
+  .demo-item {
+    width: 45%;
+  }
+  .header-small .logo {
+    width: 287px;
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer .container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contributors {
+    text-align: center;
+  }
+  .header-small .container {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 65%;
+  }
+  .logo {
+    width: 100%;
+  }
+  .button {
+    padding: 12px 24px;
+  }
+  .feature-item {
+    width: 100%;
+  }
+  .demo-item {
+    width: 100%;
+  }
+  .modal-frame {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .header {
+    height: 100%;
+  }
+}
+
+@media screen and (max-height: 480px) {
+  .logo {
+    width: 287px;
+    height: 64px;
+    margin-top: 20px;
+  }
+  .social-container {
+    margin-bottom: 20px;
+  }
+  .header .button {
+    margin-top: 1.5em;
+  }
+  .modal-frame {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-height: 320px) {
+  body {
+    font-size: 60%;
+  }
+  .logo {
+    margin-top: 10px;
+  }
+  .social-container {
+    margin-bottom: 10px;
+  }
+  .header .button {
+    margin-top: 1.25em;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .player {
+    background-image: url(../images/demos/player@2x.jpg);
+  }
+  .radio {
+    background-image: url(../images/demos/radio@2x.jpg);
+  }
+  .sprite {
+    background-image: url(../images/demos/sprite@2x.jpg);
+  }
+  .spatial {
+    background-image: url(../images/demos/spatial@2x.jpg);
+  }
+  .basic {
+    background-image: url(../images/demos/basic@2x.png);
+  }
+  .code {
+    background-image: url(../images/demos/code@2x.jpg);
+  }
+
+  .casinorpg {
+    background-image: url(../images/showcase/casinorpg@2x.jpg);
+  }
+  .buildchrome {
+    background-image: url(../images/showcase/buildchrome@2x.jpg);
+  }
+  .madmax {
+    background-image: url(../images/showcase/madmax@2x.jpg);
+  }
+  .lichness {
+    background-image: url(../images/showcase/lichness@2x.jpg);
+  }
+  .bobdylan {
+    background-image: url(../images/showcase/bobdylan@2x.jpg);
+  }
+  .walkingdead {
+    background-image: url(../images/showcase/walkingdead@2x.jpg);
+  }
+  .dominosdxp {
+    background-image: url(../images/showcase/dominosdxp@2x.jpg);
+  }
+  .justdance {
+    background-image: url(../images/showcase/justdance@2x.jpg);
+  }
+  .suicidesquad {
+    background-image: url(../images/showcase/suicidesquad@2x.jpg);
+  }
+  .cryptogames {
+    background-image: url(../images/showcase/cryptogames@2x.jpg);
+  }
+  .peanuts {
+    background-image: url(../images/showcase/peanuts@2x.jpg);
+  }
+  .codemonkey {
+    background-image: url(../images/showcase/codemonkey@2x.jpg);
+  }
+  .spacecraft {
+    background-image: url(../images/showcase/spacecraft@2x.jpg);
+  }
+  .legobatman {
+    background-image: url(../images/showcase/legobatman@2x.jpg);
+  }
+  .dragonage {
+    background-image: url(../images/showcase/dragonage@2x.jpg);
+  }
+}
