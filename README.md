@@ -1,7 +1,7 @@
 howlerjs.com
 =====================
 
-This repository contains the source code and acts as the host for [howlerjs.com](http://howlerjs.com), which is the official website for [howler.js](https://github.com/goldfire/howler.js).
+This repository contains the source code and acts as the host for [howlerjs.com](https://howlerjs.com), which is the official website for [howler.js](https://github.com/goldfire/howler.js).
 
 ![Screenshot](https://s3.amazonaws.com/howler.js/howlerjs-screenshot.png)
 
