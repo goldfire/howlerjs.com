@@ -1,6 +1,7 @@
 var modal = document.querySelector('.modal');
 var modalFrame = document.querySelector('.modal-frame');
 var modalClose = document.querySelector('.modal-close');
+var modalTitle = document.querySelector('.modal-title');
 
 // Get Stargazers count from GitHub.
 (function() {
@@ -35,14 +36,19 @@ function showDemo(id) {
   var uri = '/assets/howler.js/examples/';
   if (id === 1) {
     uri += 'player/';
+    modalTitle.innerText = 'Music Player';
   } else if (id === 2) {
     uri += 'radio/';
+    modalTitle.innerText = 'Live Radio';
   } else if (id === 3) {
     uri += 'sprite/';
+    modalTitle.innerText = 'Audio Sprites';
   } else if (id === 4) {
     uri += '3d/';
+    modalTitle.innerText = 'Spatial Audio';
   } else if (id === 5) {
     uri = '/assets/howler.js/tests/';
+    modalTitle.innerText = 'Basic Functions';
   }
 
   // Fade in the modal.

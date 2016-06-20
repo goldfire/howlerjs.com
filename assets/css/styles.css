@@ -244,6 +244,7 @@ body {
 }
 .demo-box:hover {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 .player {
   background-image: url(../images/demos/player.jpg);
