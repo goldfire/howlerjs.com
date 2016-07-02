@@ -64,8 +64,9 @@ function showDemo(id) {
 
 // Setup events on the demo buttons.
 (function() {
-  ['.player', '.radio', '.sprite', '.spatial', '.basic', '.code'].forEach(function(selector, index) {
-    var demo = document.querySelector(selector);
+  var demos = ['player', 'radio', 'sprite', 'spatial', 'basic', 'code'];
+  demos.forEach(function(selector, index) {
+    var demo = document.querySelector('.' + selector);
     if (demo) {
       demo.addEventListener('click', function() {
         showDemo(index + 1);
@@ -81,7 +82,18 @@ function showDemo(id) {
         modal.style.display = 'none';
         iframe.src = 'about:blank';
         modalFrame.removeChild(iframe);
+
+        // Remove the hash from the URL.
+        if (window.location.hash && window.location.hash !== '' && window.history && window.history.pushState) {
+          window.history.pushState(null, null, '.');
+        }
       }, 500);
     });
+  }
+
+  // If there is a hash on the window location, send them to that demo.
+  var hash = (window.location.hash + '').replace('#', '');
+  if (hash && hash.match(/player|radio|sprite|spatial|basic/)) {
+    showDemo(demos.indexOf(hash) + 1);
   }
 })();
