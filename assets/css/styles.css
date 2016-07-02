@@ -7,7 +7,7 @@ html, body {
 }
 body {
   background-color: #fff;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: "Oxygen", "Trebuchet MS", Arial, sans-serif;
   font-size: 100%;
   color: #41392f;
   position: relative;
@@ -91,7 +91,7 @@ body {
 }
 .subtitle {
   font-size: 1.75em;
-  font-weight: 100;
+  font-weight: 300;
   color: #887a67;
   width: 90%;
 }
@@ -152,7 +152,7 @@ body {
 .features {
   width: 100%;
   min-height: 1165px;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
 }
 .features .container {
   flex-direction: column;
@@ -501,7 +501,7 @@ body {
 }
 .contributors {
   font-size: 1.5em;
-  font-weight: 100;
+  font-weight: 300;
   color: #dcf2d9;
   text-align: right;
   line-height: 1.5em;
