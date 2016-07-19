@@ -20,6 +20,15 @@
       overflow-x: hidden;
     }
   </style>
+  <script>
+    // Hack to fix scrolling bug in Safari after forward/back used.
+    window.onpageshow = function(event) {
+      if (event.persisted) {
+        document.querySelector('.goldfire').style.display = 'none';
+        document.querySelector('.goldfire').style.display = 'block';
+      }
+    };
+  </script>
 </head>
 <body>
   <div class="wrapper">
