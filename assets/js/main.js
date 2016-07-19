@@ -28,7 +28,7 @@ var modalTitle = document.querySelector('.modal-title');
 function showDemo(id) {
   // If this is the demo code link, just send them to the repo.
   if (id === 6) {
-    window.location = 'https://github.com/goldfire/howler.js/examples';
+    window.location = 'https://github.com/goldfire/howler.js/tree/master/examples';
     return;
   }
 
