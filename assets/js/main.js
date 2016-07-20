@@ -53,6 +53,9 @@ function showDemo(id) {
 
   // Fade in the modal.
   modal.className = 'modal fadein';
+  modal.style.display = '-webkit-box';
+  modal.style.display = '-webkit-flex';
+  modal.style.display = '-ms-flexbox';
   modal.style.display = 'flex';
 
   // Create the iframe and begin loading the demo.
