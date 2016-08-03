@@ -623,6 +623,7 @@ body {
   opacity: 0.85;
 }
 .contributors {
+  width: 100%;
   font-size: 1.5em;
   font-weight: 300;
   color: #dcf2d9;
