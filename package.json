@@ -6,5 +6,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/goldfire/howlerjs.com.git"
-  }
+  },
+  "license": "MIT"
 }
