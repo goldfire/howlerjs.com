@@ -16,10 +16,10 @@ var modalTitle = document.querySelector('.modal-title');
       count = JSON.parse(xhr.response).stargazers_count;
     } catch (e) {}
 
-    counter.innerText = (count ? count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') : '12,500+') + ' stars';
+    counter.innerText = (count ? count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') : '14,000+') + ' stars';
   };
   xhr.onerror = function() {
-    counter.innerText = '12,500+ stars';
+    counter.innerText = '14,000+ stars';
   };
   xhr.send();
 })();
