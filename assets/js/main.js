@@ -19,7 +19,7 @@ var modalTitle = document.querySelector('.modal-title');
     counter.innerText = (count ? count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') : '14,000+') + ' stars';
   };
   xhr.onerror = function() {
-    counter.innerText = '14,000+ stars';
+    counter.innerText = '15,000+ stars';
   };
   xhr.send();
 })();
