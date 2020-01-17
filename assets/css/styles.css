@@ -120,6 +120,18 @@ body {
 .docs {
   margin-left: 15px;
 }
+.social-follow {
+  font-size: 16px;
+  color: #887a67;
+  margin-top: 15px;
+}
+.social-follow a {
+  color: #69ba5e;
+  transition: color .25s ease-in-out;
+}
+.social-follow a:hover {
+  color: #58a34d;
+}
 .social-container {
   height: 38px;
   margin-bottom: 40px;
@@ -831,6 +843,10 @@ body {
   .subtitle {
     width: 100%;
   }
+  .social-follow {
+    font-size: 14px;
+    margin-top: 10px;
+  }
   .header {
     height: 100%;
   }
@@ -918,7 +934,8 @@ body {
     margin-bottom: 20px;
   }
   .header .button {
-    margin-top: 1.5em;
+    margin-top: 0.75em;
+    padding: 15px 36px;
   }
   .modal-frame {
     width: 100%;
@@ -937,7 +954,11 @@ body {
     margin-bottom: 10px;
   }
   .header .button {
-    margin-top: 1.25em;
+    margin-top: 0.5em;
+    padding: 15px 36px;
+  }
+  .social-follow {
+    margin-top: 5px;
   }
 }
 
